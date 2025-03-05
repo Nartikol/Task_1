@@ -109,7 +109,6 @@ progam_is_running = True
 while(progam_is_running):
 
     run()
-
     answer = input('Желаете продолжить?\n'
 
       ' Введите + если да и прочий символ, если нет: ')
