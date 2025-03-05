@@ -92,7 +92,7 @@ def operation():
     return mes
 
 
-ef run():
+def run():
     try:
         num1 = float(input('Укажите первое число: '))
         num2 = float(input('Укажите второе число: '))
