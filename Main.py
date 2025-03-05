@@ -93,15 +93,19 @@ def operation():
 
 
 def run():
-    num1 = float(input('Укажите первое число: '))
-    num2 = float(input('Укажите второе число: '))
+    try:
+        num1 = float(input('Укажите первое число: '))
+        num2 = float(input('Укажите второе число: '))
 
-    op = operation()
+        op = operation()
 
-    result = calc(num1, num2, op)
+        result = calc(num1, num2, op)
 
-    print('{} {} {} = '.format(num1, op, num2))
-    print(f'Результат: {result}')
+        print('{} {} {} = '.format(num1, op, num2))
+        print(f'Результат: {result}')
+
+    except ValueError:
+        print("Ошибка: введено не число!")
 
 
 progam_is_running = True
